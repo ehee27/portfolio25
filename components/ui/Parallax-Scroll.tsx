@@ -9,6 +9,7 @@ import Link from "next/link";
 interface Projects {
   image: string;
   link: string;
+  title: string;
 }
 
 export const ParallaxScroll = ({
@@ -52,12 +53,13 @@ export const ParallaxScroll = ({
               <Link href={project.link} target="_blank">
                 <Image
                   src={project.image}
-                  className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                  className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition-all ease-in duration-200"
                   height="400"
                   width="400"
                   alt="thumbnail"
                 />
               </Link>
+              <p className="text-white">{project.title}</p>
             </motion.div>
           ))}
         </div>
@@ -67,12 +69,13 @@ export const ParallaxScroll = ({
               <Link href={project.link} target="_blank">
                 <Image
                   src={project.image}
-                  className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                  className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition-all ease-in duration-200"
                   height="400"
                   width="400"
                   alt="thumbnail"
                 />
               </Link>
+              <p className="text-white">{project.title}</p>
             </motion.div>
           ))}
         </div>
@@ -82,12 +85,13 @@ export const ParallaxScroll = ({
               <Link href={project.link} target="_blank">
                 <Image
                   src={project.image}
-                  className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                  className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition-all ease-in duration-200"
                   height="400"
                   width="400"
                   alt="thumbnail"
                 />
               </Link>
+              <p className="text-white">{project.title}</p>
             </motion.div>
           ))}
         </div>
