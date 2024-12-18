@@ -8,11 +8,11 @@ export default function Hero() {
   return (
     <section>
       <WavyBackground className="max-w-4xl mx-auto pb-40">
-        <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
-          SCOTT LUCAS
+        <p className="text-xl md:text-7xl lg:text-7xl text-white font-bold inter-var text-center font-serif">
+          TwoSeven
         </p>
-        <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-          My Portfolio Sub-Title
+        <p className="text-base md:text-xl mt-4 text-white font-normal inter-var text-center">
+          Full stack software engineer
         </p>
         {/* <TextGenerateEffect words={text} className="text-white" /> */}
       </WavyBackground>

@@ -1,5 +1,7 @@
 "use client";
 import { ParallaxScroll } from "../ui/Parallax-Scroll";
+import kcHomes from "/public/kcHomes.png";
+import mahartwork from "/public/mahartwork.png";
 
 export default function Projects() {
   return (
@@ -7,7 +9,7 @@ export default function Projects() {
       id="projects"
       className="flex flex-col justify-center items-center gap-10 bg-black"
     >
-      <h2 className="text-5xl text-white">Projects</h2>
+      <h2 className="text-5xl text-white font-serif font-bold">Projects</h2>
       <ParallaxScroll projects={projects} />
     </section>
   );
@@ -15,14 +17,12 @@ export default function Projects() {
 
 const projects = [
   {
-    image:
-      "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+    image: kcHomes,
     link: "https://www.espn.com",
     title: "Project 1 Title",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
+    image: mahartwork,
     link: "https://www.espn.com",
     title: "Project 2 Title",
   },

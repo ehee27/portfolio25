@@ -10,7 +10,8 @@ import {
   UserCircleIcon,
 } from "lucide-react";
 import { FloatingNav } from "@/components/ui/FloatingNavBar";
-import Footer from "@/components/ui/Footer";
+import Footer from "@/components/Footer";
+import { NavBar } from "@/components/Navbar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -61,7 +62,8 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <FloatingNav navItems={navItems} />
+        {/* <FloatingNav navItems={navItems} /> */}
+        <NavBar />
         {children}
         <Footer />
       </body>
