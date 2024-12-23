@@ -10,6 +10,7 @@ interface Projects {
   image: string;
   link: string;
   title: string;
+  description: string;
 }
 
 export const ParallaxScroll = ({
@@ -51,6 +52,7 @@ export const ParallaxScroll = ({
               key={"grid-1" + idx}
             >
               <Link href={project.link} target="_blank">
+                <p className="text-white">{project.title}</p>
                 <Image
                   src={project.image}
                   className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition-all ease-in duration-200"
@@ -59,7 +61,7 @@ export const ParallaxScroll = ({
                   alt="thumbnail"
                 />
               </Link>
-              <p className="text-white">{project.title}</p>
+              <p className="text-white text-sm mt-3">{project.description}</p>
             </motion.div>
           ))}
         </div>
@@ -67,6 +69,7 @@ export const ParallaxScroll = ({
           {secondPart.map((project, idx) => (
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
               <Link href={project.link} target="_blank">
+                <p className="text-white">{project.title}</p>
                 <Image
                   src={project.image}
                   className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition-all ease-in duration-200"
@@ -75,7 +78,7 @@ export const ParallaxScroll = ({
                   alt="thumbnail"
                 />
               </Link>
-              <p className="text-white">{project.title}</p>
+              <p className="text-white text-sm mt-3">{project.description}</p>
             </motion.div>
           ))}
         </div>
@@ -83,6 +86,7 @@ export const ParallaxScroll = ({
           {thirdPart.map((project, idx) => (
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
               <Link href={project.link} target="_blank">
+                <p className="text-white">{project.title}</p>
                 <Image
                   src={project.image}
                   className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition-all ease-in duration-200"
@@ -91,7 +95,7 @@ export const ParallaxScroll = ({
                   alt="thumbnail"
                 />
               </Link>
-              <p className="text-white">{project.title}</p>
+              <p className="text-white text-sm mt-3">{project.description}</p>
             </motion.div>
           ))}
         </div>

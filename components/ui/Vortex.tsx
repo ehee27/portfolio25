@@ -247,7 +247,7 @@ export const Vortex = (props: VortexProps) => {
         <canvas ref={canvasRef}></canvas>
       </motion.div>
 
-      <div className={cn("relative z-10", props.className)}>
+      <div className={cn("relative z-8", props.className)}>
         {props.children}
       </div>
     </div>

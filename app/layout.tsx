@@ -9,7 +9,6 @@ import {
   MailQuestion,
   UserCircleIcon,
 } from "lucide-react";
-import { FloatingNav } from "@/components/ui/FloatingNavBar";
 import Footer from "@/components/Footer";
 import { NavBar } from "@/components/Navbar";
 
@@ -57,12 +56,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}
+      // className={cn(
+      //   "min-h-screen bg-background font-sans antialiased",
+      //   fontSans.variable
+      // )}
       >
-        {/* <FloatingNav navItems={navItems} /> */}
         <NavBar />
         {children}
         <Footer />

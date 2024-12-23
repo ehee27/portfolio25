@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 export function NavBar() {
   return (
     <>
-      <header className="flex flex-col justify-center items-center shadow-lg fixed w-full z-10 bg-zinc-900/60 py-2">
+      <header className="flex flex-col justify-center items-center shadow-lg fixed w-full bg-zinc-900/60 py-2 z-10">
         <div className="flex w-[100%]">
           <div className=" pl-10 w-[50%]">
             <Link
