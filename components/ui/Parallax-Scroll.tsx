@@ -20,6 +20,7 @@ export const ParallaxScroll = ({
   projects: Projects[];
   className?: string;
 }) => {
+  // eslint-disable-next-line
   const gridRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     container: gridRef, // remove this if your container is not fixed height

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -20,9 +19,9 @@ export function NavBar() {
             </Link>
           </div>
           <nav className="flex justify-center items-center gap-10 container text-white w-[40%]">
-            <Link href="#about" className="text-lg">
+            {/* <Link href="#about" className="text-lg">
               About
-            </Link>
+            </Link> */}
             <Link href="#projects" className="text-lg">
               Projects
             </Link>
@@ -32,10 +31,10 @@ export function NavBar() {
           </nav>
           <div className="flex justify-center items-center gap-2 w-[10%]">
             <Link href="https://github.com/ehee27" target="_blank">
-              <IoLogoGithub className="text-3xl text-green-400 hover:scale-125 ease-in transition-all" />
+              <IoLogoGithub className="text-3xl text-white hover:scale-125 ease-in transition-all" />
             </Link>
             <Link href="https://www.linkedin.com/in/sjlucas/" target="_blank">
-              <FaLinkedin className="text-3xl text-green-600 hover:scale-125 ease-in transition-all" />
+              <FaLinkedin className="text-3xl text-white hover:scale-125 ease-in transition-all" />
             </Link>
           </div>
         </div>
