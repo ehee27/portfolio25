@@ -22,22 +22,22 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center gap-10 bg-black px-10 md:px-20 h-screen overflow-y-scroll"
+      className="flex flex-col justify-center items-center gap-8 md:gap-2 bg-black px-10 md:px-20 py-20 md:py-2 md:h-screen overflow-y-scroll"
     >
       <h2 className="text-5xl text-white font-serif font-bold">Projects</h2>
       {/* <ParallaxScroll projects={projectsData} /> */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 md:mt-10">
         {projects?.map((project: ProjectValues, i: Key | null | undefined) => (
           <BackgroundGradient
             key={i}
-            className="rounded-[22px] max-w-sm p-2 sm:p-10 bg-zinc-900 text-white"
+            className="rounded-[22px] max-w-sm p-8 bg-zinc-900 text-white"
           >
             <Image
               src={project.image}
               alt={project.title}
               width={280}
               height={50}
-              className="rounded-md"
+              className="rounded-xl"
             />
             <p className="text-xl font-black mt-5">{project.title}</p>
 
@@ -53,35 +53,3 @@ export default function Projects() {
     </section>
   );
 }
-
-//   return (
-//     <section
-//       id="projects"
-//       className="flex flex-col justify-center items-center gap-10 bg-black h-screen w-[100vw] border-8 border-red-500"
-//     >
-//       <h2 className="text-5xl text-white font-serif font-bold">Projects</h2>
-//       <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-//         {projects?.map((project: ProjectValues, i: Key | null | undefined) => (
-//           <BackgroundGradient
-//             key={i}
-//             className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-zinc-900 text-white"
-//           >
-//             <Image
-//               src={project.image}
-//               alt={project.title}
-//               width={280}
-//               height={50}
-//               className="rounded-md"
-//             />
-//             <p className="text-xl font-bold font-serif mt-5">{project.title}</p>
-
-//             <p className="text-sm">{project.description}</p>
-//             <button className="flex justify-center items-center rounded-xl py-1 text-white bg-black mt-4 text-xs font-bold w-[100px]">
-//               View
-//             </button>
-//           </BackgroundGradient>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }

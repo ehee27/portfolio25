@@ -18,13 +18,4 @@ export default function About() {
       </div>
     </section>
   );
-  // return (
-  //   <section
-  //     id="about"
-  //     className="flex flex-col justify-center items-center bg-black text-white px-10 md:px-40"
-  //   >
-  //     <h2 className="text-5xl font-serif font-bold">About Me</h2>
-  //     <TextGenerateEffect words={words} />
-  //   </section>
-  // );
 }

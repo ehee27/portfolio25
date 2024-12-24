@@ -1,19 +1,68 @@
 "use client";
 import Image from "next/image";
 import scott from "/public/scott.png";
-import reactLogo from "/public/React.webp";
-import nextLogo from "/public/next.webp";
-import typescriptLogo from "/public/Typescript.png";
-import jsLogo from "/public/javascript.webp";
-import tailwindLogo from "/public/Tailwind.png";
-import awsLogo from "/public/aws.png";
 import { Vortex } from "../ui/Vortex";
+import { Key } from "react";
 
-// const logos = [
-//   { logo: reactLogo },
-//   { logo: nextLogo },
-//   { logo: typescriptLogo },
-// ];
+interface LogoValues {
+  src: string;
+  alt: string;
+  height: number;
+  mobileHeight: number;
+  width: number;
+  mobileWidth: number;
+}
+
+const logos = [
+  {
+    src: "/javascript.webp",
+    alt: "javascript logo",
+    height: 130,
+    width: 130,
+    mobileHeight: 50,
+    mobileWidth: 50,
+  },
+  {
+    src: "/React.webp",
+    alt: "react logo",
+    height: 110,
+    width: 110,
+    mobileHeight: 40,
+    mobileWidth: 40,
+  },
+  {
+    src: "/next.webp",
+    alt: "nextjs logo",
+    height: 100,
+    width: 100,
+    mobileHeight: 40,
+    mobileWidth: 40,
+  },
+  {
+    src: "/Typescript.png",
+    alt: "typescript logo",
+    height: 100,
+    width: 100,
+    mobileHeight: 40,
+    mobileWidth: 40,
+  },
+  {
+    src: "/Tailwind.png",
+    alt: "tailwind logo",
+    height: 110,
+    width: 110,
+    mobileHeight: 40,
+    mobileWidth: 40,
+  },
+  {
+    src: "/aws.png",
+    alt: "aws logo",
+    height: 130,
+    width: 130,
+    mobileHeight: 40,
+    mobileWidth: 40,
+  },
+];
 
 export default function Hero() {
   return (
@@ -25,60 +74,57 @@ export default function Hero() {
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
-        <div className="flex justify-center gap-8 w-[100vw]">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-[100vw]">
           <div>
             <Image
               src={scott}
               alt="scott lucas"
               height={170}
               width={170}
-              className="rounded-full"
+              className="rounded-full hidden md:block"
+            />
+            {/* ------------ MOBILE ---------------------- */}
+            <Image
+              src={scott}
+              alt="scott lucas"
+              height={150}
+              width={150}
+              className="rounded-full sm:block md:hidden"
             />
           </div>
           <div className="flex flex-col justify-center items-center text-white">
-            <h2 className="text-2xl md:text-6xl font-black text-center tracking-wider font-serif">
+            <h2 className="text-4xl md:text-6xl font-black text-center tracking-wider font-serif">
               SCOTT LUCAS
             </h2>
-            <p className="text-md tracking-wider mt-2">
+            <p className="text-xs md:text-lg tracking-wider mt-2">
               Full Stack Dev | Athlete | Artist | Kansas Citian | Funny Dude
             </p>
           </div>
         </div>
-        {/* <div className="flex justify-center items-center w-[100vw] mt-5">
-          <p className="text-white text-sm md:text-2xl text-center">
-            JS, React, NextJS, Typescript, AWS
-          </p>
-        </div> */}
 
-        <div className="flex flex-col sm:flex-row items-center gap-8 mt-6">
-          <Image
-            src={jsLogo}
-            alt="react logo"
-            height={130}
-            width={130}
-            className="rounded-full"
-          />
-          <Image
-            src={reactLogo}
-            alt="react logo"
-            height={110}
-            width={110}
-            className="rounded-full"
-          />
-          <Image
-            src={nextLogo}
-            alt="react logo"
-            height={100}
-            width={100}
-            className="rounded-full"
-          />
-          <Image src={typescriptLogo} alt="react logo" height={90} width={90} />
-          <Image src={tailwindLogo} alt="react logo" height={110} width={110} />
-          <Image src={awsLogo} alt="react logo" height={130} width={130} />
-          {/* <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
-            Order now
-          </button>
-          <button className="px-4 py-2  text-white ">Watch trailer</button> */}
+        <div className="flex items-center gap-8 mt-6">
+          {logos?.map((logo, i) => (
+            <Image
+              key={i}
+              src={logo.src}
+              alt={logo.alt}
+              height={logo.height}
+              width={logo.width}
+              className="rounded-full hidden md:block"
+            />
+          ))}
+        </div>
+        <div className="flex items-center gap-4 mt-6">
+          {logos?.map((logo, i) => (
+            <Image
+              key={i}
+              src={logo.src}
+              alt={logo.alt}
+              height={logo.mobileHeight}
+              width={logo.mobileWidth}
+              className="rounded-full sm:block md:hidden"
+            />
+          ))}
         </div>
       </Vortex>
     </section>
