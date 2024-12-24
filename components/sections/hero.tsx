@@ -2,16 +2,15 @@
 import Image from "next/image";
 import scott from "/public/scott.png";
 import { Vortex } from "../ui/Vortex";
-import { Key } from "react";
 
-interface LogoValues {
-  src: string;
-  alt: string;
-  height: number;
-  mobileHeight: number;
-  width: number;
-  mobileWidth: number;
-}
+// interface LogoValues {
+//   src: string;
+//   alt: string;
+//   height: number;
+//   mobileHeight: number;
+//   width: number;
+//   mobileWidth: number;
+// }
 
 const logos = [
   {
