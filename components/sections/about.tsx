@@ -1,6 +1,6 @@
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 
-const words = `I’m passionate about tech, the environment, fitness and art. I’ve had diverse life experience as a former professional baseball player, a group fitness coach and a commercial actor. I’m a full circle communicator, team-oriented energy giver and a creative problem solver. I’m eager to take the next step in my software development career utilizing my previous work experience, leadership and teamwork abilities.
+const words = `I’m passionate about tech, the environment, fitness and art. I’ve had diverse life experience as a former professional baseball player, a group fitness coach and a commercial actor. I’m a team-builder, full circle communicator, and a creative problem solver. I’m eager to take the next step in my software development career utilizing my previous work experience and leadership abilities.
 `;
 
 export default function About() {

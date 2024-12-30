@@ -3,15 +3,6 @@ import Image from "next/image";
 import scott from "/public/scott.png";
 import { Vortex } from "../ui/Vortex";
 
-// interface LogoValues {
-//   src: string;
-//   alt: string;
-//   height: number;
-//   mobileHeight: number;
-//   width: number;
-//   mobileWidth: number;
-// }
-
 const logos = [
   {
     src: "/javascript.webp",
@@ -69,7 +60,7 @@ export default function Hero() {
       <Vortex
         backgroundColor="black"
         rangeY={800}
-        particleCount={150}
+        particleCount={200}
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
