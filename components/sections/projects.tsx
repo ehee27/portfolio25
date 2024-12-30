@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center gap-8 md:gap-2 bg-black px-10 md:px-20 py-20 md:py-2 md:h-screen overflow-y-scroll"
+      className="flex flex-col justify-center items-center gap-8 md:gap-2 bg-black px-10 md:px-20 py-20 md:py-2 md:h-screen overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
     >
       <h2 className="text-5xl text-white font-serif font-bold">Projects</h2>
       {/* <ParallaxScroll projects={projectsData} /> */}

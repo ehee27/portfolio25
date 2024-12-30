@@ -109,7 +109,7 @@ export default function Hero() {
               alt={logo.alt}
               height={logo.height}
               width={logo.width}
-              className="rounded-full hidden md:block"
+              className="hidden md:block"
             />
           ))}
         </div>
@@ -121,7 +121,7 @@ export default function Hero() {
               alt={logo.alt}
               height={logo.mobileHeight}
               width={logo.mobileWidth}
-              className="rounded-full sm:block md:hidden"
+              className="sm:block md:hidden"
             />
           ))}
         </div>
