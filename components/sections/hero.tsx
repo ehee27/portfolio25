@@ -92,7 +92,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex items-center gap-8 mt-6">
+        <div className="hidden items-center gap-8 mt-6 md:flex">
           {logos?.map((logo, i) => (
             <Image
               key={i}
@@ -100,7 +100,7 @@ export default function Hero() {
               alt={logo.alt}
               height={logo.height}
               width={logo.width}
-              className="hidden md:block"
+              // className="hidden md:block"
             />
           ))}
         </div>
