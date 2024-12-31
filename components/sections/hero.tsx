@@ -104,7 +104,7 @@ export default function Hero() {
             />
           ))}
         </div>
-        <div className="flex items-center gap-4 mt-6">
+        <div className="flex items-center gap-4 mt-6 sm:block md:hidden">
           {logos?.map((logo, i) => (
             <Image
               key={i}
@@ -112,7 +112,7 @@ export default function Hero() {
               alt={logo.alt}
               height={logo.mobileHeight}
               width={logo.mobileWidth}
-              className="sm:block md:hidden"
+              // className="sm:block md:hidden"
             />
           ))}
         </div>
