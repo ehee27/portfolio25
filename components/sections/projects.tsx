@@ -28,26 +28,55 @@ export default function Projects() {
       {/* <ParallaxScroll projects={projectsData} /> */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 md:mt-10">
         {projects?.map((project: ProjectValues, i: Key | null | undefined) => (
-          <BackgroundGradient
-            key={i}
-            className="rounded-[22px] max-w-sm p-8 bg-zinc-900 text-white"
-          >
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={280}
-              height={50}
-              className="rounded-xl"
-            />
-            <p className="text-xl font-black mt-5">{project.title}</p>
+          // <BackgroundGradient
+          //   key={i}
+          //   className="rounded-[22px] max-w-sm p-8 bg-zinc-900 text-white"
+          // >
+          <div key={i} className="relative group m-2">
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-green-500 to-blue-800 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-100"></div>
+            <div className="flex flex-col relative px-5 md:px-10 py-6 bg-black rounded-xl text-white">
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={300}
+                height={70}
+                className="rounded"
+              />
+              <p className="text-xl font-black mt-5 font-serif font-bold">
+                {project.title}
+              </p>
+              <p className="text-sm mt-3">{project.description}</p>
+              <Link href={project.link} target="_blank">
+                <button className="flex justify-center items-center rounded py-1 text-zinc-700 bg-white mt-4 text-xs font-bold w-[100px]">
+                  View
+                </button>
+              </Link>
+            </div>
+          </div>
+          // <div
+          //   key={i}
+          //   className="text-white flex flex-col items-center justify-center py-5 border-8 rounded-xl"
+          // >
+          //   <Image
+          //     src={project.image}
+          //     alt={project.title}
+          //     width={300}
+          //     height={70}
+          //     className="rounded"
+          //   />
+          //   <div className="px-5">
+          //     <p className="text-xl font-black mt-5">{project.title}</p>
 
-            <p className="text-sm mt-3">{project.description}</p>
-            <Link href={project.link} target="_blank">
-              <button className="flex justify-center items-center rounded py-1 text-zinc-700 bg-white mt-4 text-xs font-bold w-[100px]">
-                View
-              </button>
-            </Link>
-          </BackgroundGradient>
+          //     <p className="text-sm mt-3">{project.description}</p>
+          //     <Link href={project.link} target="_blank">
+          //       <button className="flex justify-center items-center rounded py-1 text-zinc-700 bg-white mt-4 text-xs font-bold w-[100px]">
+          //         View
+          //       </button>
+          //     </Link>
+          //   </div>
+          // </div>
+
+          // </BackgroundGradient>
         ))}
       </div>
     </section>

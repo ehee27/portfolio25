@@ -60,7 +60,7 @@ export default function Hero() {
       <Vortex
         backgroundColor="black"
         rangeY={800}
-        particleCount={200}
+        particleCount={150}
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
@@ -86,7 +86,7 @@ export default function Hero() {
             <h2 className="text-4xl md:text-6xl font-black text-center tracking-wider font-serif">
               SCOTT LUCAS
             </h2>
-            <p className="text-xs md:text-lg tracking-wider mt-2">
+            <p className="text-xs md:text-lg tracking-wider mt-2 font-serif">
               Full Stack Dev | Athlete | Artist | Kansas Citian | Funny Dude
             </p>
           </div>

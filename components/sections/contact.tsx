@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-[60vh] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md"
+      className="h-[60vh] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md z-auto"
     >
       <Vortex
         backgroundColor="black"
