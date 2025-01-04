@@ -5,11 +5,11 @@ import Projects from "@/components/sections/projects";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-black">
       <Hero />
       <About />
       <Projects />
       <Contact />
-    </>
+    </div>
   );
 }

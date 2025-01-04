@@ -56,7 +56,10 @@ const logos = [
 
 export default function Hero() {
   return (
-    <section className="w-[100vw] mx-auto rounded-md  h-[70vh] overflow-hidden">
+    <section
+      id="home"
+      className="w-[100vw] mx-auto rounded-md  h-[70vh] overflow-hidden"
+    >
       <Vortex
         backgroundColor="black"
         rangeY={800}
@@ -84,7 +87,7 @@ export default function Hero() {
           </div>
           <div className="flex flex-col justify-center items-center text-white">
             <h2 className="text-4xl md:text-6xl font-black text-center tracking-wider font-serif">
-              SCOTT LUCAS
+              Scott Lucas
             </h2>
             <p className="text-xs md:text-lg tracking-wider mt-2 font-serif">
               Full Stack Dev | Athlete | Artist | Kansas Citian | Funny Dude
