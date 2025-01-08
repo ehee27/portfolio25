@@ -69,20 +69,20 @@ export default function Hero() {
       >
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-[100vw]">
           <div>
-            <Image
+            {/* <Image
               src={scott}
               alt="scott lucas"
               height={170}
               width={170}
               className="rounded-full hidden md:block"
-            />
+            /> */}
             {/* ------------ MOBILE ---------------------- */}
             <Image
               src={scott}
               alt="scott lucas"
               height={150}
               width={150}
-              className="rounded-full sm:block md:hidden"
+              className="rounded-full"
             />
           </div>
           <div className="flex flex-col justify-center items-center text-white">
