@@ -21,7 +21,8 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center gap-8 md:gap-2 bg-black max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full md:h-screen overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+      // className="flex flex-col justify-center items-center gap-8 md:gap-2 bg-black max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full md:h-screen overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+      className="flex flex-col justify-center items-center w-[100vw] mx-auto max-w-6xl rounded-md h-100% px-10 overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] bg-black"
     >
       <h2 className="text-5xl text-white font-serif font-bold">Projects</h2>
       {/* <ParallaxScroll projects={projectsData} /> */}

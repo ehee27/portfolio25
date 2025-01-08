@@ -5,18 +5,15 @@ const words = `Iâ€™m passionate about tech, the environment, fitness and art. Iâ
 
 export default function About() {
   return (
-    <section
-      id="about"
-      // className="bg-black flex flex-col justify-around items-center px-10 md:px-20 h-[30vh] overflow-hidden"
-      className="w-[100vw] mx-auto rounded-md h-[100vh] px-10 md:px-40 overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
-    >
-      {/* <h2 className="text-white text-4xl font-bold font-serif">About Me</h2> */}
-      <div className="h-[50rem] w-full bg-black bg-grid-small-white/[0.2] relative flex flex-col items-center justify-center">
-        {/* Radial gradient for the container to give a faded look */}
-        {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
-        {/* <h2 className="text-white text-4xl font-bold font-serif">About Me</h2> */}
-        <TextGenerateEffect words={words} />
-      </div>
-    </section>
+    // <section
+    //   id="about"
+    //   // className="bg-black flex flex-col justify-around items-center px-10 md:px-20 h-[30vh] overflow-hidden"
+    //   className="w-[100vw] mx-auto rounded-md h-[100vh] px-10 md:px-40 overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+    // >
+    // <div className="h-[500px] w-full bg-grid-small-white/[0.2] relative flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-[40%] w-full px-10">
+      <TextGenerateEffect words={words} />
+    </div>
+    // </section>
   );
 }
