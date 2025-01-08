@@ -58,7 +58,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-[100vw] mx-auto rounded-md  h-[70vh] overflow-hidden"
+      className="w-[100vw] mx-auto rounded-md  h-[100vh] overflow-hidden"
     >
       <Vortex
         backgroundColor="black"

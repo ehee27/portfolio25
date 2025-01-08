@@ -7,7 +7,8 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-black flex flex-col justify-around items-center px-10 md:px-20 h-[30vh]"
+      // className="bg-black flex flex-col justify-around items-center px-10 md:px-20 h-[30vh] overflow-hidden"
+      className="w-[100vw] mx-auto rounded-md h-[100vh] px-10 md:px-40 overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
     >
       {/* <h2 className="text-white text-4xl font-bold font-serif">About Me</h2> */}
       <div className="h-[50rem] w-full bg-black bg-grid-small-white/[0.2] relative flex flex-col items-center justify-center">

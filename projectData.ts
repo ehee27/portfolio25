@@ -7,18 +7,18 @@ export const projectsData = [
       "Mock ESPN.com website for NFL news, standings and playoff projections. Aggregated with Puppeteer and managed via AWS.",
   },
   {
+    image: "/safeTravels.png",
+    link: "https://safetravelsggtours.com/",
+    title: "Safe Travels",
+    description:
+      "SOAP-based API. XML converted to JSON via Express proxy server. Tour submissions managed via AWS Lambda and SES.",
+  },
+  {
     image: "/kcHomes.png",
     link: "https://kc-homes-i7hupvt8h-scott-lucas-projects.vercel.app/",
     title: "TwoSeven Homes",
     description:
       "Real Estate website. Users can filter search by location, beds, baths and price. Selections and favorites managed with React Context API.",
-  },
-  {
-    image: "/safeTravels.png",
-    link: "https://safetravelsggtours.com/",
-    title: "Safe Travels",
-    description:
-      "SOAP-based API. XML converted to JSON via Express proxy server. Tour submissions managed via AWS Lambda and SES",
   },
   {
     image: "/mahartwork.png",
